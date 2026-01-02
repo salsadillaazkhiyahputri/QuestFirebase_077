@@ -151,8 +151,8 @@ fun DaftarSiswa(
         modifier = modifier,
         contentPadding = PaddingValues(bottom = 80.dp)
     ) {
-        items(items = itemSiswa, key = { it.id }) { person ->
-            ItemSiswa(
+        items(itemSiswa) { person ->
+        ItemSiswa(
                 siswa = person,
                 modifier = Modifier
                     .padding(dimensionResource(id = R.dimen.padding_small))
