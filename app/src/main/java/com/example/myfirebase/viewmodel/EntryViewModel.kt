@@ -31,7 +31,7 @@ class EntryViewModel(private val repositorySiswa: RepositorySiswa): ViewModel() 
 
     suspend fun addSiswa() {
         if (validasiInput()) {
-            // Menggunakan postDataSiswa dan toDataSiswa dari file Siswa.kt
+
             repositorySiswa.postDataSiswa(uiStateSiswa.detailSiswa.toDataSiswa())
         }
     }
